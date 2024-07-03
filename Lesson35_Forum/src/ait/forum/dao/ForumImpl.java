@@ -81,9 +81,6 @@ public class ForumImpl implements Forum {
         int to = Arrays.binarySearch(posts, 0, size, pattern, comparator);
         to = to >= 0 ? to : -to - 1;
 
-        System.out.println(dateFrom + " " + dateTo);
-        System.out.println(from + " " + to);
-
         return Arrays.copyOfRange(posts, from, to);
     }
 
